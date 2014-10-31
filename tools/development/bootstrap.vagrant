@@ -26,4 +26,4 @@ if [ $? -eq 0 ];then
     sudo service docker.io restart
 fi
 
-sudo docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter
+make build
