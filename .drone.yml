@@ -1,3 +1,7 @@
 image: cloudnautique/ci-base
 script:
   - ./tools/development/bootstrap.vagrant
+notify:
+  - email:
+      recipients:
+        - bill@rancher.com
