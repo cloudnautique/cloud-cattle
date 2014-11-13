@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd $(dirname $0)/..
+
+if [ -z "$VIRTUAL_ENV" ];then
+    echo "Please run this in a virtualenv or manually do pip installs"
+    exit 1
+fi
+
+pip install -r test-requirements.txt
